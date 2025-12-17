@@ -1,7 +1,22 @@
 # UAS_openCV-Presensi_Faris
 
+Nama: Faris Setyawan
+NIM: 43050230032
+Kelas: 5B Teknologi Informasi
 
-Alur Kerja 
+🎲 Deskripsi Projek Presensi Menggunakan OpenCV:
+Aplikasi presensi wajah ini merupakan sistem absensi otomatis yang memanfaatkan teknologi **computer vision** dan **pengenalan wajah** menggunakan kamera (webcam). Aplikasi ini dirancang untuk mencatat kehadiran seseorang secara **real-time** tanpa perlu input manual, sehingga proses presensi menjadi lebih cepat, akurat, dan efisien.
+
+Aplikasi bekerja dengan cara mengambil gambar dari kamera, kemudian mendeteksi wajah manusia menggunakan metode **Haar Cascade**. Setelah wajah terdeteksi, sistem akan melakukan proses **pengenalan wajah** menggunakan algoritma **LBPH (Local Binary Pattern Histogram)** yang telah dilatih sebelumnya. Hasil pengenalan ini berupa label numerik yang kemudian diterjemahkan menjadi nama pengguna sesuai dengan data yang telah disimpan.
+
+Jika wajah yang terdeteksi dikenali oleh sistem dan tingkat kepercayaannya memenuhi batas yang ditentukan, maka pengguna tersebut dianggap hadir. Data kehadiran akan otomatis dicatat ke dalam file **CSV** yang berisi nama, tanggal, dan waktu kehadiran. Sistem juga memiliki mekanisme untuk mencegah presensi ganda, sehingga satu orang hanya akan tercatat satu kali dalam satu sesi penggunaan aplikasi.
+
+Pada tampilan kamera, aplikasi akan menampilkan kotak di sekitar wajah yang terdeteksi. Wajah yang dikenali akan ditandai dengan warna hijau dan nama pengguna, sedangkan wajah yang tidak dikenali akan ditandai dengan warna merah dan teks “Tidak Dikenal”. Aplikasi ini berjalan secara terus-menerus hingga pengguna menghentikannya secara manual.
+
+Secara keseluruhan, aplikasi presensi wajah ini cocok digunakan untuk lingkungan seperti sekolah, kampus, atau kantor karena mampu meningkatkan efisiensi pencatatan kehadiran, mengurangi kesalahan manusia, serta memanfaatkan teknologi modern berbasis kecerdasan buatan.
+
+
+🛜 Alur Kerja:
 1. Buat folder 'dataset'
 dataset/
 
@@ -28,9 +43,7 @@ Program akan membuka kamera dan mendeteksi wajah.
 Jika wajah terdeteksi dan cocok dengan dataset maka → data presensi tercatat dan masuk ke dalam file presensi.csv yang dibuat otomatis oleh program.
 
 
-🪩##Penjelasan setiap fungsi kode:
-
-
+🪩 ##Penjelasan setiap fungsi kode:
 import cv2 berfungsi untuk mengimpor library OpenCV yang digunakan untuk pengolahan citra dan video, seperti membuka kamera, mendeteksi wajah, mengubah warna gambar, dan menampilkan jendela kamera.
 
 import os digunakan untuk mengakses fungsi sistem operasi, misalnya untuk mengecek apakah sebuah file sudah ada atau belum.
@@ -117,5 +130,4 @@ break menghentikan perulangan saat tombol `q` ditekan.
 cap.release() berfungsi untuk melepaskan akses kamera.
 
 cv2.destroyAllWindows() berfungsi untuk menutup semua jendela OpenCV yang terbuka.
-
 
