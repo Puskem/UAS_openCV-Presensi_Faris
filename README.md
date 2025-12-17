@@ -1,27 +1,6 @@
 # UAS_openCV-Presensi_Faris
 
 
-#Struktur file bisa terlihat jelas dalam mode 'code' bukan mode 'text'
-Struktur file 
-│
-├── dataset/
-│   ├── Faris/
-│   │   ├── 0.jpg
-│   │   ├── 3.jpg
-|   │   ├── .jpg
-|   │   ├── .jpg
-│   │   ├── 94.jpg
-│   │   ├── e.jpg
-│   │   ├── .jpg
-│   ├── Zidan/
-│   │   ├── 94.jpg
-|   │   ├── 94jpgg
-│   │   ├── e.jpg
-├── haarcascade_frontalface_default.xml
-├── train_model.py
-├── presensi.py
-
-
 Alur Kerja 
 1. Buat folder 'dataset'
 dataset/
