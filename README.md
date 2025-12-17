@@ -8,8 +8,14 @@ presensi_opencv/
 │   ├── Faris/
 │   │   ├── 0.jpg
 │   │   ├── 3.jpg
+|   │   ├── 3.jpg
 │   ├── Wildan/
 │   │   ├── 94.jpg
+│   │   ├── e.jpg
+│   │   ├── e.jpg
+│   ├── Zidan/
+│   │   ├── 94.jpg
+  │   ├── 94jpgg
 │   │   ├── e.jpg
 ├── haarcascade_frontalface_default.xml
 ├── train_model.py
