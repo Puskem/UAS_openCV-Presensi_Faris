@@ -1,21 +1,21 @@
 # UAS_openCV-Presensi_Faris
 
 
-#Struktur file 
-presensi_opencv/
+#Struktur file bisa terlihat jelas dalam mode 'code' bukan mode 'text'
+Struktur file 
 │
 ├── dataset/
 │   ├── Faris/
 │   │   ├── 0.jpg
 │   │   ├── 3.jpg
-|   │   ├── 3.jpg
-│   ├── Wildan/
+|   │   ├── .jpg
+|   │   ├── .jpg
 │   │   ├── 94.jpg
 │   │   ├── e.jpg
-│   │   ├── e.jpg
+│   │   ├── .jpg
 │   ├── Zidan/
 │   │   ├── 94.jpg
-  │   ├── 94jpgg
+|   │   ├── 94jpgg
 │   │   ├── e.jpg
 ├── haarcascade_frontalface_default.xml
 ├── train_model.py
